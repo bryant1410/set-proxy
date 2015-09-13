@@ -22,13 +22,13 @@ Some python packages are needed to:
 sudo pip install netaddr netifaces
 ```
 
-To install these scripts just clone the repo and copy the files to your home. Then add an alias for quick execution. Add it to `~/.bashrc` so it's ran at the beginning of every interactive shell:
+To install these scripts just clone the repo wherever you want and reference the files from your home. Then add an alias for quick execution. Add it to `~/.bashrc` so it's ran at the beginning of every interactive shell:
 
 ```bash
 git clone https://github.com/bryant1410/check-proxy.git
 cd check-proxy
-cp check_subnet.py set_proxy.sh ~
-echo 'alias set-proxy="source ~/set_proxy.sh"' >> ~/.bashrc
+ln -s $PWD/set_proxy.sh $HOME/.set_proxy.sh
+echo 'alias set-proxy="source ~/.set_proxy.sh"' >> ~/.bashrc
 echo 'set-proxy' >> ~/.bashrc
 ```
 
