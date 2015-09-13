@@ -4,22 +4,18 @@ Script that sets env variables for proxy depending on the configured subnets.
 
 ## Installation
 
-Thi script is for Linux. Python 3 and pip are needed. You can install it in Ubuntu (or Debian based) running:
+Thi script is for Linux. Python 3, pip and some Python packages are needed. You can install it in Ubuntu (or Debian based) running:
 
 ```bash
 sudo apt-get install python3 python3-pip
+sudo pip3 install netaddr netifaces
 ```
 
 In Fedora (or RedHat based) you need to run:
 
 ```bash
 sudo yum install python3 python3-pip
-```
-
-Some python packages are needed to:
-
-```bash
-sudo pip install netaddr netifaces
+sudo pip3 install netaddr netifaces
 ```
 
 To install these scripts just clone the repo wherever you want and reference the files from your home. Then add an alias for quick execution. Add it to `~/.bashrc` so it's ran at the beginning of every interactive shell:
