@@ -5,7 +5,7 @@ PROXY_PORT=3128
 
 PROXY_ADDRESS_AND_PORT="$PROXY_ADDRESS:$PROXY_PORT"
 
-CHECK_SUBNET_FILE="~/.set-proxy/check_subnet.py"
+CHECK_SUBNET_FILE="$HOME/.set-proxy/check_subnet.py"
 
 if [[ $("$CHECK_SUBNET_FILE") == "1" ]]; then
   export http_proxy="http://$PROXY_ADDRESS_AND_PORT"
