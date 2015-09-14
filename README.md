@@ -23,7 +23,7 @@ To install the script just clone the repo in your home and add an alias for quic
 ```bash
 cd ~
 git clone https://github.com/bryant1410/set-proxy.git .set-proxy
-echo 'alias set-proxy="source ~/.set-proxy/set_proxy.sh"' >> ~/.bashrc
+echo 'alias set-proxy="source $HOME/.set-proxy/set_proxy.sh"' >> ~/.bashrc
 echo 'set-proxy' >> ~/.bashrc
 ```
 
